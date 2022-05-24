@@ -360,7 +360,7 @@ span.input-group-text{
 				return;
 			}
 			var IMP = window.IMP;
-			IMP.init('imp10397338');
+			IMP.init('imp56953105');
 			IMP.request_pay({
 			     pg : 'inicis',//결재방법(pg)
 			     pay_method: 'card',

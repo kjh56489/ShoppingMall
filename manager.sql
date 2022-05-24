@@ -13,7 +13,6 @@ CREATE TABLE fnq(
 DROP TABLE  fnq
 INSERT INTO fnq VALUES (8, 'a001', '질문7', '답변7', sysdate, sysdate, 0 )
 
-
 매니저 테이블
 CREATE TABLE manager(
    manager_id VARCHAR2(15),
@@ -24,6 +23,7 @@ CREATE TABLE manager(
    manager_code INT NOT NULL,
    CONSTRAINT pk_manager_id PRIMARY KEY(manager_id)
 )
+
 DROP TABLE manager
 INSERT INTO manager VALUES ('a001', 1111, '관리자', 'a001@naver.com', 12341234, 1)
 INSERT INTO manager VALUES ('a002', 1111, '경영자', 'a001@naver.com', 12341234, 2)
@@ -62,7 +62,7 @@ INSERT INTO item_file VALUES (6, '파일이름', 6, sysdate)
 CREATE SEQUENCE seq_file_no
 
 카테고리 테이블
-CREATE TABLE category(
+CREATE TABLE category(	
    item_name VARCHAR2(120),
    item_category VARCHAR2(60) NOT NULL,
    CONSTRAINT pk_category_item_name PRIMARY KEY(item_name)

@@ -86,7 +86,6 @@ public class CategoryController {
 	@RequestMapping(value = "/item_name_list", method = RequestMethod.GET)
 	public ResponseEntity<List<CategoryVO>> item_name_list(String item_category) {
 		ResponseEntity<List<CategoryVO>> entity = null;
-		System.out.println(item_category);
 		try {
 			List<CategoryVO> list = cService.item_name_list(item_category);
 			entity = new ResponseEntity<List<CategoryVO>>(list, HttpStatus.OK);

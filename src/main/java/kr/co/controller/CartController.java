@@ -147,9 +147,6 @@ public class CartController {
 			ResponseEntity<String> entity = null;
 			try {
 				String checkCart = cService.countCart(vo);
-				System.out.println(vo.getCart_price());
-				System.out.println(vo.getItem_no());
-				System.out.println(vo.getMember_id());
 				entity = new ResponseEntity<String>(checkCart, HttpStatus.OK);
 			} catch (Exception e) {
 				e.printStackTrace();
